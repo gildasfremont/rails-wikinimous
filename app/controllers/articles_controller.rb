@@ -21,7 +21,7 @@ class ArticlesController < ApplicationController
 
   def update
     @article = Article.create(article_params)
-    redirect_to restaurant_path(@article)
+    redirect_to article_path(@article)
   end
 
   def destroy
