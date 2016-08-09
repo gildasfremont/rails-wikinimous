@@ -1,0 +1,4 @@
+<% @articles.each do |article| %>
+  <h2><%= article.title %></h2>
+  <p><%= article.content[0..60] %> <%= link_to "lire plus...", article_path(article) %></p>
+<% end %>

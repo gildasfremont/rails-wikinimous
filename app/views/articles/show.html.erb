@@ -1,0 +1,6 @@
+  <h2><%= @article.title %></h2>
+  <p><%= link_to "Supprimer", article_path(@article),
+      method: :delete,
+      data: { confirm: "Ok pour confirmer la suppresion :" } %>
+       <%= link_to "Modifier", edit_article_path(@article)%></p>
+  <p><%= @article.content %></p>
